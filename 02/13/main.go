@@ -71,3 +71,5 @@ func TestScaleDeployment(t *testing.T) {
 		t.Errorf("Unexpected action: %#v", fakeClient.actions[1])
 	}
 }
+
+// 在这个示例中，ScaleDeployment函数从客户端接口获取部署对象，更新其副本数量，然后使用客户端接口将更新后的部署对象发送回服务器。TestScaleDeployment函数测试了客户端接口是否调用了正确的操作，并验证了更新后的部署副本数量。
